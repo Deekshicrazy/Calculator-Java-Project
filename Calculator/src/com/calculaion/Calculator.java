@@ -30,11 +30,16 @@ public class Calculator {
 				System.out.println("\n Enter your Choice");
 				
 				choice = input.nextInt();
+			
+				if (choice >0 && choice <6)
+				{
+				   
+				
 				
 				if(choice == 5)
 				{
 					
-					    System.out.println("Please Select The Avaliable Choice");
+//					    System.out.println("Please Select The Avaliable Choice");
 
 						System.out.print("\nThanks for using");
 					    System.exit(0);
@@ -66,15 +71,25 @@ public class Calculator {
 				{
 					System.out.print("Division: " + Division.division(n1,n2));
 				}
-			}	
+				
+				
+			}
+			else
+			{
+				System.out.println("please enter the available choice");
+				System.out.println("select from the available options");
+				
+
+			
+			}
+			}
 		}
 		catch(Exception ex)
 		{
 			
 				System.out.println("\nError: " + ex.toString() + "Occured");
-				
-					
-			
+						
 		}
+		
 	}
 }
